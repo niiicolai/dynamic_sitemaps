@@ -12,7 +12,7 @@ module DynamicSitemaps
   DEFAULT_FOLDER = "sitemaps"
   DEFAULT_INDEX_FILE_NAME = "sitemap.xml"
   DEFAULT_ALWAYS_GENERATE_INDEX = false
-  DEFAULT_PROTOCOL = "http"
+  DEFAULT_PROTOCOL = "https"
   SEARCH_ENGINE_PING_URLS = [
     "http://www.google.com/webmasters/sitemaps/ping?sitemap=%s",
     "http://www.bing.com/webmaster/ping.aspx?siteMap=%s"
@@ -30,7 +30,7 @@ module DynamicSitemaps
 
     # Configure DynamicSitemaps.
     # Defaults:
-    # 
+    #
     #   DynamicSitemaps.configure do |config|
     #     config.path = Rails.root.join("public")
     #     config.folder = "sitemaps"
@@ -39,9 +39,9 @@ module DynamicSitemaps
     #     config.config_path = Rails.root.join("config", "sitemap.rb")
     #     config.per_page = 50_000
     #   end
-    # 
+    #
     # To ping search engines after generating the sitemap:
-    # 
+    #
     #   DynamicSitemaps.configure do |config|
     #     config.search_engine_ping_urls << "http://customsearchengine.com/ping?url=%s" # Default is Google and Bing
     #     config.ping_environments << "staging" # Default is production
